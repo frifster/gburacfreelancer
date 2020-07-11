@@ -1,0 +1,33 @@
+@import './breakpoint.scss';
+@import './color.scss';
+@import './about.scss';
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px 200px;
+  background-color: $bg-color;
+  color: $dark-color;
+  letter-spacing: 0.02em;
+
+  @media (max-width: $breakpoint-desktop) {
+    padding: 20px 150px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 20px 100px;
+  }
+}
+
+p {
+  font-size: 16px;
+  color: $para-color;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 28px;
+}
