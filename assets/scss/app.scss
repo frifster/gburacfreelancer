@@ -1,21 +1,22 @@
 @import './breakpoint.scss';
 @import './color.scss';
 @import './about.scss';
+@import './userbg.scss';
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 20px 200px;
+  padding: 2vh 15vw 5vh;
   background-color: $bg-color;
   color: $dark-color;
   letter-spacing: 0.02em;
 
   @media (max-width: $breakpoint-desktop) {
-    padding: 20px 150px;
+    padding: 2vh 12vw 5vh;
   }
 
   @media (max-width: $breakpoint-tablet) {
-    padding: 20px 100px;
+    padding: 2vh 9vw 5vh;
   }
 }
 

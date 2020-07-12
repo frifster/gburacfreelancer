@@ -1,8 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn, faTwitter, faPinterestP } from '@fortawesome/free-brands-svg-icons'
 import { faDownload, faFile } from '@fortawesome/free-solid-svg-icons'
+import { PERSONAL_INFO } from '../../constants/enums'
 
 function About () {
+  const {
+    firstName,
+    lastName,
+    birthDate,
+    job,
+    nationality,
+    availability,
+    email
+  } = PERSONAL_INFO
+
   return (
     <section id='about'>
       <h1 className='about-header'>About <span className='emphasis'>Me</span></h1>
@@ -19,18 +30,18 @@ function About () {
             Hi, I'm Ghia Burac, ang pinakamagandang dilag sa balat ng lupa.
           </h2>
           <p className='sub-intro'>
-            - It's My Pleasure to Introduce About Myself.
+            - It's My Pleasure to Introduce Myself.
           </p>
           <p className='long-intro'>
             I'm Sarah Brown Australia. Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am.
           </p>
           <div className='user-info'>
-            <div className='user-name'><span className='label'>Name:</span> Sarah Brown</div>
-            <div className='user-birth'><span className='label'>Date Of Birth:</span> 25 March, 1992</div>
-            <div className='user-work'><span className='label'>Work Status:</span> Web Designer</div>
-            <div className='user-nation'><span className='label'>Nationality:</span> Filipino</div>
-            <div className='user-free'><span className='label'>Freelance:</span> Available</div>
-            <div className='user-email'><span className='label'>Email:</span> info@example.com</div>
+            <div className='user-name'><span className='label'>Name:</span> {`${firstName} ${lastName}`}</div>
+            <div className='user-birth'><span className='label'>Date Of Birth:</span> {birthDate}</div>
+            <div className='user-work'><span className='label'>Work Status:</span>{job}</div>
+            <div className='user-nation'><span className='label'>Nationality:</span> {nationality}</div>
+            <div className='user-free'><span className='label'>Freelance:</span> {availability}</div>
+            <div className='user-email'><span className='label'>Email:</span> {email}</div>
             <div className='user-school'><span className='label'>Study:</span> Chicago University</div>
             <div className='user-phone'><span className='label'>Phone:</span> (+12) 113-804-9098</div>
             <div className='user-address'><span className='label'>Address:</span> 245 Proctor St USA</div>
