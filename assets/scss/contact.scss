@@ -1,0 +1,85 @@
+.contact-page {
+  @include emphasize;
+  @include separator;
+  @include floating-nav;
+
+  .contact-form {
+    margin-top: 30px;
+    padding: 50px;
+    display: grid;
+    grid-template-areas:
+    "name email number"
+    "subject subject service"
+    "message message send"
+    "message message send";
+
+    gap: 20px;
+
+    .contact-name { grid-area: name; }
+    .contact-email { grid-area: email; }
+    .contact-number { grid-area: number; }
+    .contact-subject { grid-area: subject; }
+    .contact-message { grid-area: message; }
+    .contact-service { grid-area: service; }
+    .contact-send { 
+      grid-area: send;
+      @include make-btn;
+      background-color: #fff;
+      border-width: 1px;
+      margin-right: 0;
+    }
+
+    @include global-input;
+  }
+
+  .additional-contact {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 50px;
+
+    .contact-card {
+      @include card;
+      display: grid;
+      grid-template-areas: 
+      "icon label label"
+      "icon detail detail";
+
+      .add-label {
+        grid-area: label;
+        font-weight: bold;
+      }
+
+      .contact-icon {
+        @include mini-icon;
+        grid-area: icon;
+      }
+
+      .add-detail {
+        grid-area: detail;
+        color: $para-color;
+        a {
+          text-decoration: none;
+
+          &:visited {
+            color: $para-color;
+          }
+        }
+      }
+
+      &:hover {
+        .contact-icon {
+          border: 2px solid $bg-color;
+          color:  $bg-color;
+        }
+
+        a,
+        a:visited,
+        .add-detail {
+          color: $bg-color;
+        }
+
+      }
+    }
+  }
+}
