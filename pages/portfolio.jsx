@@ -1,10 +1,11 @@
 import { withRouter } from 'next/router'
-import { SKILLS_LIST, SKILL_CARDS } from '../constants/enums'
 import { useImmer } from 'use-immer'
 import { useEffect } from 'react'
 
+import { SKILLS_LIST, SKILL_CARDS } from '../constants/enums'
+import HomeFloatNav from '../components/shared/HomeFloatNav'
+
 function Portfolio ({ router }) {
-  console.log('router', router)
   const [state, setState] = useImmer({
     selectedKey: 'all',
     filteredSkills: SKILL_CARDS
@@ -24,6 +25,7 @@ function Portfolio ({ router }) {
 
   return (
     <div className='portfolio-page'>
+      <HomeFloatNav />
       <h1 className='portfolio-header'>Portfolio</h1>
       <div className='separator' />
       <div className='navigation-filter'>
@@ -31,6 +33,7 @@ function Portfolio ({ router }) {
           className='skill-nav'
           isactive={(state.selectedKey === 'all').toString()}
           onClick={() => setSelectedKey('all')}
+          title='All'
         >
           All
         </span>
@@ -51,7 +54,11 @@ function Portfolio ({ router }) {
           {
             state.filteredSkills.map((skill, index) => (
               <div className='skill-card' key={'skill-card' + index}>
-                <div className='skill-image' />
+                <div className='skill-image-container'>
+                  {
+                    skill.image ? <img className='skill-image' src={skill.image} /> : null
+                  }
+                </div>
                 <div className='skill-label'>{skill.label}</div>
               </div>
             ))

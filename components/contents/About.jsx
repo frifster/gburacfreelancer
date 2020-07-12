@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 import { faFacebookF, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faDownload, faFile } from '@fortawesome/free-solid-svg-icons'
+import { faDownload, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { PERSONAL_INFO } from '../../constants/enums'
 
 function About () {
@@ -62,9 +63,11 @@ function About () {
             <a href='/resume-gburac.pdf' className='download-cv' download>
               Résumé <FontAwesomeIcon icon={faDownload} />
             </a>
-            <button className='hire-me'>
-              Hire Me <FontAwesomeIcon icon={faFile} />
-            </button>
+            <Link href='/contact'>
+              <span className='hire-me'>
+              Contact Me <FontAwesomeIcon icon={faPhoneAlt} />
+              </span>
+            </Link>
           </div>
         </div>
       </div>

@@ -11,7 +11,6 @@ const GlobalStyles = createGlobalStyle`
 `
 
 function App ({ Component, pageProps }) {
-  console.log({ Component, pageProps })
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side')

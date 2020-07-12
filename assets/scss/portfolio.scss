@@ -1,5 +1,6 @@
 .portfolio-page {
   @include separator;
+  @include floating-nav;
 
   .navigation-filter {
     margin-top: 30px;
@@ -14,6 +15,9 @@
       color: $para-color;
       display: inline-block;
 
+      @media (max-width: $breakpoint-tablet) {
+        display: block;
+      }
 
       @include sub-header;
 
@@ -38,16 +42,34 @@
   .skills-cards {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     gap: 20px;
 
     .skill-card {
-      background-color: $base-color;
-      height: 300px;
       display: grid;
       place-items: center;
-      color: $bg-color;
+      color: $dark-color;
       border-radius: 30px;
+      padding: 20px 5px 10px;
+      min-height: 280px;
+
+      &:hover {
+        background-color: lighten($color: $base-color, $amount: 50);
+      }
+
+      .skill-image-container {
+        .skill-image {
+          float: left;
+          width:  350px;
+          height: 280px;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+
+      .skill-label {
+        padding: 10px 0;
+      }
     }
   }
 }
