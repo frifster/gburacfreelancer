@@ -1,0 +1,54 @@
+.skills-container {
+  @include sub-header;
+
+  .skills-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+
+    .skill-container {
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      background-color: #fff;
+      border: 1px solid rgba($color: #000000, $alpha: 0.1);
+      padding: 30px;
+      gap: 15px;
+      border-radius: 15px;
+
+      .skill-icon {
+        font-size: 45px;
+        background-color: $base-color;
+        padding: 30px;
+        border-radius: 50%;
+        color: $bg-color;
+      }
+
+      .skill-label {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .skill-desc {
+        font-size: 15px;
+        line-height: 1.9;
+        color: $para-color;
+      }
+
+      &:hover {
+        background-color: $base-color;
+
+        .skill-icon {
+          background-color: $bg-color;
+          color: $base-color;
+        }
+
+        .skill-label,
+        .skill-desc {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

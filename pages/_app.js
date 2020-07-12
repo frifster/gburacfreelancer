@@ -17,7 +17,7 @@ function App () {
     <>
       <Head>
         <title>Ghia CV</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/assets/images/favicon.png' />
       </Head>
       <div className='light dark-header bgimage'>
         <div className='page animated' style={{ animationDuration: '500ms' }}>

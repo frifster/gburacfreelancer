@@ -1,6 +1,7 @@
 // import Home from './contents/Home'
 import About from './contents/About'
 import UserBackground from './contents/UserBackground'
+import Skills from './contents/Skills'
 
 function MainContent () {
   return (
@@ -10,6 +11,7 @@ function MainContent () {
       <About />
       <hr />
       <UserBackground />
+      <Skills />
     </main>
   )
 }

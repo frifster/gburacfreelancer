@@ -1,5 +1,6 @@
 #about {
   margin-bottom: 50px;
+  min-height: 100vh;
 
   .about-header {
     margin-bottom: 0.5em;
@@ -30,7 +31,11 @@
   .opening-statement {
     text-align: center;
     color: $para-color;
-    margin: 50px
+    margin: 50px;
+    font-size: 22px;
+    font-style: italic;
+    font-family: mo;
+    white-space: pre-wrap;
   }
 
   .personal-info {
@@ -58,6 +63,9 @@
     }
 
     .introduction {
+      .sub-intro {
+        font-weight: bold;
+      }
       .long-intro {
         line-height: 1.8em;
         text-align: justify;
@@ -68,22 +76,19 @@
         grid-template-areas:
         "username useremail"
         "userbirth userschool"
-        "userwork userphone"
-        "usernation useraddress"
-        "userfree userwebsite";
+        "usernation userphone"
+        "userfree useraddress";
 
         color: $para-color;
 
         .user-name { grid-area: username; }
         .user-birth { grid-area: userbirth; }
         .user-email { grid-area: useremail; }
-        .user-work { grid-area: userwork; }
         .user-school { grid-area: userschool; }
         .user-phone { grid-area: userphone; }
         .user-nation { grid-area: usernation; }
         .user-free { grid-area: userfree; }
         .user-address { grid-area: useraddress; }
-        .user-website { grid-area: userwebsite; }
 
         .label {
           color: $dark-color;
@@ -97,14 +102,12 @@
           grid-template-areas:
           "username"
           "userbirth"
-          "userwork"
           "usernation"
           "userfree"
           "useremail"
           "userschool"
           "userphone"
-          "useraddress"
-          "userwebsite";
+          "useraddress";
         }
       }
 
@@ -143,6 +146,7 @@
           outline: none;
           color: $base-color;
           border-radius: 5px;
+          text-decoration: none;
 
           &:active {
             background-color: lighten($color: $base-color, $amount: 5);
