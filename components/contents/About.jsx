@@ -60,7 +60,7 @@ function About () {
           </div>
           <div className='action-buttons'>
             <a href='/resume-gburac.pdf' className='download-cv' download>
-              DOWNLOAD CV <FontAwesomeIcon icon={faDownload} />
+              Résumé <FontAwesomeIcon icon={faDownload} />
             </a>
             <button className='hire-me'>
               Hire Me <FontAwesomeIcon icon={faFile} />
