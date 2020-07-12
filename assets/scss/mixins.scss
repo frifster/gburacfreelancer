@@ -14,3 +14,23 @@
     }
   }
 }
+
+@mixin separator {
+  .separator {
+    content: '';
+    border: 2px solid $base-color;
+    margin: 0 auto;
+    width: 150px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      border: 7px solid $base-color;
+      top: -7px;
+      right: 70px;
+    }
+  }
+  
+}

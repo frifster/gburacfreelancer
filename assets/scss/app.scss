@@ -4,6 +4,7 @@
 @import './about.scss';
 @import './userbg.scss';
 @import './skills.scss';
+@import './portfolio.scss';
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,6 +30,8 @@ p {
 
 h1 {
   font-size: 42px;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
 h2 {

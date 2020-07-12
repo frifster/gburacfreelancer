@@ -1,0 +1,53 @@
+.portfolio-page {
+  @include separator;
+
+  .navigation-filter {
+    margin-top: 30px;
+    cursor: pointer;
+    text-align: center;
+
+    .skill-nav {
+      word-break: keep-all;
+      text-align: center;
+      margin: 0 10px;
+      white-space: nowrap;
+      color: $para-color;
+      display: inline-block;
+
+
+      @include sub-header;
+
+      &[isactive=true],
+      &:hover {
+        font-weight: bolder;
+        color: darken($color: $base-color, $amount: 10);
+      }
+
+      &::before {
+        display: grid;
+        content: attr(title);
+        font-weight: bolder;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+
+    }
+  }
+
+  .skills-cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 20px;
+
+    .skill-card {
+      background-color: $base-color;
+      height: 300px;
+      display: grid;
+      place-items: center;
+      color: $bg-color;
+      border-radius: 30px;
+    }
+  }
+}

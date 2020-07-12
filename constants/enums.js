@@ -110,33 +110,72 @@ export const EXPERIENCES = [
 
 export const SKILLS_LIST = [
   {
+    key: 'articleContent',
     icon: faMagic,
-    label: 'Creative Designer',
+    label: 'Article Content',
     desc: 'Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua Ut enim ad sed do sit...'
   },
   {
+    key: 'graphicContent',
     icon: faUsers,
-    label: 'User Experience',
+    label: 'Graphic Content',
     desc: 'Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua Ut enim ad sed do sit...'
   },
   {
+    key: 'seo',
     icon: faSuitcase,
-    label: 'Branding Design',
+    label: 'SEO Optimization',
     desc: 'Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua Ut enim ad sed do sit...'
   },
   {
+    key: 'customer',
     icon: faClipboard,
-    label: 'UI/UX Design',
+    label: 'Customer Service',
     desc: 'Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua Ut enim ad sed do sit...'
   },
   {
+    key: 'ecommerce',
     icon: faBug,
-    label: 'Software Engineer',
+    label: 'E-commerce Operations',
     desc: 'Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua Ut enim ad sed do sit...'
   },
   {
+    key: 'email',
     icon: faUser,
-    label: 'Media Marketing',
+    label: 'Email Management',
     desc: 'Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua Ut enim ad sed do sit...'
+  }
+]
+
+export const SKILL_CARDS = [
+  {
+    image: '',
+    label: 'Email Manage 01',
+    key: 'email'
+  },
+  {
+    image: '',
+    label: 'Email Manage 02',
+    key: 'email'
+  },
+  {
+    image: '',
+    label: 'Article Content 01',
+    key: 'articleContent'
+  },
+  {
+    image: '',
+    label: 'SEO 01',
+    key: 'seo'
+  },
+  {
+    image: '',
+    label: 'Ecommerce 01',
+    key: 'ecommerce'
+  },
+  {
+    image: '',
+    label: 'Ecommerce 02',
+    key: 'ecommerce'
   }
 ]

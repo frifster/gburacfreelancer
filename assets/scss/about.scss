@@ -3,30 +3,12 @@
   min-height: 100vh;
 
   .about-header {
-    margin-bottom: 0.5em;
-    text-align: center;
-
     .emphasis {
       color: $base-color;
     }
   }
 
-  .separator {
-    content: '';
-    border: 2px solid $base-color;
-    margin: 0 auto;
-    width: 150px;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      border-radius: 50%;
-      border: 7px solid $base-color;
-      top: -7px;
-      right: 70px;
-    }
-  }
+  @include separator;
 
   .opening-statement {
     text-align: center;
@@ -149,7 +131,7 @@
           grid-template-columns: 1fr;
         }
 
-        gap: 20px;
+        gap: 5px;
 
         .download-cv,
         .hire-me {
