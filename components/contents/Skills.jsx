@@ -7,6 +7,7 @@ function Skills () {
   const router = useRouter()
   const handleOnclick = (key) => {
     router.push('/portfolio?key=' + key)
+      .then(() => window.scrollTo(0, 0))
   }
   return (
     <div className='skills-container'>
@@ -14,7 +15,7 @@ function Skills () {
       <div className='skills-list'>
         {
           SKILLS_LIST.map((skill, index) => (
-            <div className='skill-container' key={`skill${index}`} onClick={() => handleOnclick(skill.key)}>
+            <div className='skill-container' key={`skill${index}`} onClick={() => handleOnclick(skill.disable ? 'all' : skill.key)}>
               <div className='skill-icon'>
                 <FontAwesomeIcon icon={skill.icon} />
               </div>

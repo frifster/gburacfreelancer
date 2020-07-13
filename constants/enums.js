@@ -129,6 +129,7 @@ export const SKILLS_LIST = [
     desc: 'Increase leads, conversion rate, and website traffic with combined efforts of SEO optimization strategies. From website analysis to planning and execution, we can push your website up the list into the top spot.'
   },
   {
+    disable: true,
     key: 'customer',
     icon: faComments,
     label: 'Customer service',
@@ -151,57 +152,137 @@ export const SKILLS_LIST = [
 export const SKILL_CARDS = [
   {
     image: '/assets/images/soc-med-1.png',
-    label: 'Content Creation 1',
+    label: 'Social media content - Ecommerce',
     key: 'contentCreation'
   },
   {
     image: '/assets/images/soc-med-2.png',
-    label: 'Content Creation 2',
+    label: 'Social media content - Ecommerce 3',
     key: 'contentCreation'
   },
   {
     image: '/assets/images/soc-med-3.png',
-    label: 'Content Creation 3',
+    label: 'Social media content - Ecommerce 2',
     key: 'contentCreation'
   },
   {
     image: '/assets/images/soc-med-4.png',
-    label: 'Content Creation 4',
+    label: 'Infographic 2',
     key: 'contentCreation'
   },
   {
     image: '/assets/images/soc-med-5.png',
-    label: 'Content Creation 5',
-    key: 'contentCreation'
+    label: 'Online Ordering process',
+    key: 'operations'
   },
   {
     image: '/assets/images/soc-med-6.png',
-    label: 'Content Creation 6',
+    label: 'Infographic 1',
     key: 'contentCreation'
   },
   {
-    image: '',
-    label: 'Admin Manage 02',
+    image: '/assets/images/admin-task-1.png',
+    label: 'Booking Events',
     key: 'admin'
   },
   {
-    image: '',
-    label: 'Article Content 01',
-    key: 'articleContent'
+    image: '/assets/images/admin-task-2.png',
+    label: 'Email Marketing',
+    key: 'admin'
   },
   {
-    image: '',
-    label: 'SEO 01',
+    image: '/assets/images/seo-task-1.png',
+    label: 'Off-page optimization',
     key: 'seo'
   },
   {
-    image: '',
-    label: 'Operations 01',
+    image: '/assets/images/seo-task-2.png',
+    label: 'SEO Website analysis and planning',
+    key: 'seo'
+  },
+  {
+    image: '/assets/images/seo-task-3.png',
+    label: 'Keyword research 2',
+    key: 'seo'
+  },
+  {
+    image: '/assets/images/seo-task-4.png',
+    label: 'Business Branding',
+    key: 'seo'
+  },
+  {
+    image: '/assets/images/seo-task-5.png',
+    label: 'Keyword research',
+    key: 'seo'
+  },
+  {
+    image: '/assets/images/seo-task-6.png',
+    label: 'Business registration and listing',
+    key: 'seo'
+  },
+  {
+    image: '/assets/images/seo-task-7.png',
+    label: 'Google analytics',
+    key: 'seo'
+  },
+  {
+    image: '/assets/images/seo-task-8.png',
+    label: 'On-page optimization',
+    key: 'seo'
+  },
+  {
+    image: '/assets/images/seo.png',
+    label: 'SEO writing optimization',
+    key: 'seo'
+  },
+  {
+    image: '/assets/images/opera-1.png',
+    label: 'Return Processing',
     key: 'operations'
   },
   {
-    image: '',
-    label: 'Operations 02',
+    image: '/assets/images/opera-2.png',
+    label: 'Operations metrics',
     key: 'operations'
+  },
+  {
+    image: '/assets/images/opera-3.png',
+    label: 'Product description 2',
+    key: 'operations'
+  },
+  {
+    image: '/assets/images/opera-4.png',
+    label: 'Product description 1',
+    key: 'operations'
+  },
+  {
+    image: '/assets/images/article-5.png',
+    label: 'Article 5',
+    key: 'articleContent'
+  },
+  {
+    image: '/assets/images/article-4.png',
+    label: 'Article 4',
+    key: 'articleContent'
+  },
+  {
+    image: '/assets/images/article-3.png',
+    label: 'Article 3',
+    key: 'articleContent'
+  },
+  {
+    image: '/assets/images/article-2.png',
+    label: 'Article 2',
+    key: 'articleContent'
+  },
+  {
+    image: '/assets/images/article-1.png',
+    label: 'Article 5',
+    key: 'articleContent'
+  },
+  {
+    image: '/assets/images/article-6.png',
+    label: 'Announcement',
+    key: 'articleContent'
   }
 ]

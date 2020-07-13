@@ -52,9 +52,12 @@
       border-radius: 30px;
       padding: 20px 5px 10px;
       min-height: 280px;
+      background-color: lighten($color: $base-color, $amount: 30);
 
       &:hover {
-        background-color: lighten($color: $base-color, $amount: 50);
+        background-color: $base-color;
+        color: #fff;
+        font-weight: bold;
       }
 
       .skill-image-container {
