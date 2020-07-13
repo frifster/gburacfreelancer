@@ -38,7 +38,7 @@ function Portfolio ({ router }) {
           All
         </span>
         {
-          SKILLS_LIST.map((skill, index) => (
+          SKILLS_LIST.filter(skill => !skill.disable).map((skill, index) => (
             <span
               title={skill.label}
               className='skill-nav'
