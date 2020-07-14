@@ -14,7 +14,6 @@ function Contact () {
       <div className='contact-form'>
         <TextField className='global-input contact-name' label='Name' variant='outlined' />
         <TextField className='global-input contact-email' label='Email' variant='outlined' />
-        <TextField className='global-input contact-number' label='Mobile Number' variant='outlined' />
         <TextField className='global-input contact-subject' label='Subject' variant='outlined' />
         <TextField
           className='global-input contact-message'

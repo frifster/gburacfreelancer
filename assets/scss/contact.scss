@@ -8,16 +8,16 @@
     padding: 50px;
     display: grid;
     grid-template-areas:
-    "name email number"
-    "subject subject service"
-    "message message send"
-    "message message send";
+    "service service service service"
+    "name name email email"
+    "subject subject subject subject"
+    "message message message send"
+    "message message message send";
 
     gap: 20px;
 
     .contact-name { grid-area: name; }
     .contact-email { grid-area: email; }
-    .contact-number { grid-area: number; }
     .contact-subject { grid-area: subject; }
     .contact-message { grid-area: message; }
     .contact-service { grid-area: service; }
@@ -30,12 +30,22 @@
     }
 
     @include global-input;
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-areas:
+      "service service service"
+      "name name name"
+      "email email email"
+      "subject subject subject"
+      "message message message"
+      ". send ."
+    }
   }
 
   .additional-contact {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 50px;
 
     .contact-card {
@@ -80,6 +90,10 @@
         }
 
       }
+    }
+
+    @media (max-width: $breakpoint-desktop) {
+      grid-template-columns: 1fr;
     }
   }
 }
