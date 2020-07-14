@@ -51,9 +51,12 @@
     .contact-card {
       @include card;
       display: grid;
+      grid-template-columns: auto 1fr 1fr;
       grid-template-areas: 
       "icon label label"
       "icon detail detail";
+
+      gap: 10px;
 
       .add-label {
         grid-area: label;

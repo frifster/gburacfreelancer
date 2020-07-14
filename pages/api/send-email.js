@@ -19,7 +19,6 @@ export default async (req, res) => {
 
       return res.status(200).end()
     } catch (err) {
-      console.log('ERROR', err)
       return res.status(err.status || 301).json({
         error: {
           code: err.message,
