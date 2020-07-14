@@ -22,6 +22,8 @@ export const PERSONAL_INFO = {
   upworkLink: 'https://www.upwork.com/freelancers/~01c6ae03e3cba2663d'
 }
 
+export const SENGRID_SENDER = 'avilaeugeneb@gmail.com'
+
 export const EDUCATIONS = [
   {
     dateRange: '2016',
@@ -109,42 +111,51 @@ export const EXPERIENCES = [
   }
 ]
 
+export const SKILL_PAIRS = {
+  articleContent: 'Article writing',
+  contentCreation: 'Content creation',
+  seo: 'SEO optimization',
+  customer: 'Customer service',
+  operations: 'Operations management',
+  admin: 'Administrative tasks'
+}
+
 export const SKILLS_LIST = [
   {
     key: 'articleContent',
     icon: faPen,
-    label: 'Article writing',
+    label: SKILL_PAIRS.articleContent,
     desc: 'Build customer loyalty while increasing website traffic with quality article contents. Let’s create informative and relevant content for your business to convert leads and maintain a solid online presence.'
   },
   {
     key: 'contentCreation',
     icon: faMagic,
-    label: 'Content creation',
+    label: SKILL_PAIRS.contentCreation,
     desc: 'Grow your brand’s presence with quality content that gets the attention of your clients. Let’s turn your information into a simple, easy to understand and valuable content to connect with your target audience. '
   },
   {
     key: 'seo',
     icon: faCogs,
-    label: 'SEO optimization',
+    label: SKILL_PAIRS.seo,
     desc: 'Increase leads, conversion rate, and website traffic with combined efforts of SEO optimization strategies. From website analysis to planning and execution, we can push your website up the list into the top spot.'
   },
   {
     disable: true,
     key: 'customer',
     icon: faComments,
-    label: 'Customer service',
+    label: SKILL_PAIRS.customer,
     desc: 'Provide exemplary customer service to build a good relationship with your customers. Let’s create a lasting impression with the customers by giving relevant and helpful product or services information, resolving their issues, and handling complaints as quickly as possible.'
   },
   {
     key: 'operations',
     icon: faUsers,
-    label: 'Operations management',
+    label: SKILL_PAIRS.operations,
     desc: 'Create effective and efficient operational procedures for your business and team with systems development. Let’s plan better ways to provide products and services to your customers without compromising your quality and budget. '
   },
   {
     key: 'admin',
     icon: faClipboard,
-    label: 'Administrative tasks',
+    label: SKILL_PAIRS.admin,
     desc: 'Maximize your time and productivity by allowing me to do administrative tasks from order taking, inventory management, to reports and documentation. '
   }
 ]
