@@ -2,6 +2,29 @@
   @include separator;
   @include floating-nav;
 
+  .large-image-modal {
+    height: auto;
+    overflow-x: auto;
+    display: grid;
+    place-items: center;
+    border: none;
+    outline: none;
+    padding: 20px 0;
+
+    .large-image-container {
+      max-width: 95vw;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
   .navigation-filter {
     margin-top: 30px;
     cursor: pointer;
@@ -42,16 +65,17 @@
   .skills-cards {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
+    gap: 1rem;
+    justify-content: center;
 
     .skill-card {
       display: grid;
       place-items: center;
       color: $dark-color;
-      border-radius: 30px;
+      border-radius: 10px;
       padding: 20px 5px 10px;
-      min-height: 280px;
+      min-height: 250px;
       background-color: lighten($color: $base-color, $amount: 30);
 
       &:hover {
@@ -61,12 +85,13 @@
       }
 
       .skill-image-container {
+        width: 300px;
+
         .skill-image {
-          float: left;
-          width:  350px;
-          height: 280px;
+          width:  100%;
+          height: 200px;
           object-fit: cover;
-          border-radius: 20px;
+          border-radius: 10px;
         }
       }
 
