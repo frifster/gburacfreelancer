@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
-import { faFacebookF, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faDownload, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { PERSONAL_INFO } from '../../constants/enums'
+import SocialMedia from '../shared/SocialMedia'
 
 function About () {
   const {
@@ -19,10 +19,7 @@ function About () {
     address,
     aboutMe,
     userPic,
-    userHeader,
-    fbLink,
-    linkedIn,
-    twitter
+    userHeader
   } = PERSONAL_INFO
 
   return (
@@ -48,17 +45,7 @@ function About () {
             <div className='user-phone'><span className='label'>Phone:</span> {contactNumber}</div>
             <div className='user-address'><span className='label'>Address:</span> {address}</div>
           </div>
-          <div className='social-media'>
-            <a className='soc-med-icon' href={fbLink} target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faFacebookF} />
-            </a>
-            <a className='soc-med-icon' href={linkedIn} target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
-            <a className='soc-med-icon' href={twitter} target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </div>
+          <SocialMedia />
           <div className='action-buttons'>
             <a href='/resume-gburac.pdf' className='download-cv' download>
               Résumé <FontAwesomeIcon icon={faDownload} />

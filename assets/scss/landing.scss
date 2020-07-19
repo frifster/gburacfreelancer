@@ -1,0 +1,103 @@
+.landing-page {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: grid;
+
+  @include social-media;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 10px;
+
+  .social-media {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: end;
+    margin: 0;
+  }
+
+  .landing-header {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    text-align: left;
+    margin: 0;
+    font-size: 70px;
+    line-height: 140px;
+  }
+
+  .landing-banner {
+    grid-row: 4;
+    grid-column: 2/4;
+    border: 1px solid $base-color;
+    line-height: 110px;
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+
+    &::after{
+      content: "";
+      width: 0; 
+      height: 0; 
+      border-right: 20px solid transparent;
+      border-top: 20px solid $base-color;
+      position: absolute;
+      bottom: -21px;
+      left: 40px;
+    }
+
+
+  }
+
+  .next-button {
+    grid-row: 5;
+    grid-column: 4/auto;
+    place-self: center end;
+    padding: 10px 20px;
+    border: 1px solid $base-color;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $base-color;
+
+    &:hover {
+      color: black;
+      background-color: $base-color;
+    }
+  }
+
+  @media (max-width: $breakpoint-desktop) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    padding: 0 30px;
+
+    .social-media {
+      grid-row: 2/3;
+      grid-column: 1;
+    }
+
+    .landing-header {
+      grid-row: 3/4;
+      grid-column: 1;
+      font-size: 30px;
+      line-height: 70px;
+      text-align: center;
+    }
+
+    .landing-banner {
+      grid-row: 4/5;
+      grid-column: 1;
+      font-size: 30px;
+      line-height: 110px;
+      text-align: center;
+
+      &::after{
+        border: none;
+      }
+    }
+
+    .next-button {
+      grid-row: 5/6;
+      grid-column: 1;
+      place-self: center;
+    }
+  }
+}

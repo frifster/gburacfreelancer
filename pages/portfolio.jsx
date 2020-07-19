@@ -6,6 +6,8 @@ import Fade from '@material-ui/core/Fade'
 
 import { SKILLS_LIST, SKILL_CARDS } from '../constants/enums'
 import HomeFloatNav from '../components/shared/HomeFloatNav'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 
 function Portfolio ({ router }) {
   const [state, setState] = useImmer({
@@ -35,7 +37,7 @@ function Portfolio ({ router }) {
   }
 
   return (
-    <div className='portfolio-page'>
+    <div className='portfolio-page main'>
       <HomeFloatNav />
       {
         state.selectedImage && (
@@ -49,6 +51,7 @@ function Portfolio ({ router }) {
           >
             <Fade in={state.imageModal}>
               <div className='large-image-container'>
+                <span className='close-button' onClick={() => handleOpenLargeImage('')}><FontAwesomeIcon icon={faTimesCircle} /></span>
                 <img className='skill-large-image' src={state.selectedImage} />
               </div>
             </Fade>

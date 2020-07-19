@@ -38,15 +38,18 @@
       "email email email"
       "subject subject subject"
       "message message message"
-      ". send ."
+      ". send .";
+
+      padding: 20px;
     }
   }
 
   .additional-contact {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 30px 50px 0;
+    place-content: center;
 
     .contact-card {
       @include card;
@@ -55,8 +58,9 @@
       grid-template-areas: 
       "icon label label"
       "icon detail detail";
+      padding: 15px;
 
-      gap: 10px;
+      gap: 5px;
 
       .add-label {
         grid-area: label;
@@ -96,7 +100,11 @@
     }
 
     @media (max-width: $breakpoint-desktop) {
-      grid-template-columns: 1fr;
+      font-size: 12px;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      padding: 30px 20px 0;
     }
   }
 }

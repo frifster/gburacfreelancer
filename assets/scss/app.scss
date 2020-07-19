@@ -6,21 +6,24 @@
 @import './skills.scss';
 @import './portfolio.scss';
 @import './contact.scss';
+@import './landing.scss';
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 2vh 15vw 5vh;
   background-color: $bg-color;
   color: $dark-color;
   letter-spacing: 0.02em;
 
-  @media (max-width: $breakpoint-desktop) {
-    padding: 2vh 12vw 5vh;
-  }
-
-  @media (max-width: $breakpoint-tablet) {
-    padding: 2vh 9vw 5vh;
+  .main {
+    padding: 2vh 15vw 5vh;
+    @media (max-width: $breakpoint-desktop) {
+      padding: 2vh 12vw 5vh;
+    }
+  
+    @media (max-width: $breakpoint-tablet) {
+      padding: 2vh 5vw 5vh;
+    }
   }
 }
 

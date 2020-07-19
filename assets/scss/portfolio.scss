@@ -3,7 +3,6 @@
   @include floating-nav;
 
   .large-image-modal {
-    height: auto;
     overflow-x: auto;
     display: grid;
     place-items: center;
@@ -13,6 +12,7 @@
 
     .large-image-container {
       max-width: 95vw;
+      position: relative;
 
       img {
         width: 100%;
@@ -21,6 +21,20 @@
 
       &:focus {
         outline: none;
+      }
+
+      .close-button {
+        display: none;
+        position: fixed;
+        opacity: 0.75;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        
+        @media (max-width: $breakpoint-desktop) {
+          display: block;
+        }
       }
     }
   }
@@ -92,6 +106,11 @@
           height: 200px;
           object-fit: cover;
           border-radius: 10px;
+
+        }
+
+        @media (max-width: $breakpoint-tablet) {
+          width: 250px;
         }
       }
 

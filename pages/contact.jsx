@@ -105,8 +105,10 @@ function Contact () {
     })
   }
 
+  const handleUpworkClick = () => window.open(PERSONAL_INFO.upworkLink, '_blank')
+
   return (
-    <div className='contact-page'>
+    <div className='contact-page main'>
       <HomeFloatNav />
       <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'right' }} open={state.snackBar} autoHideDuration={1000} onClose={handleOnClose}>
         <Alert severity='success'>
@@ -211,7 +213,7 @@ function Contact () {
           </span>
         </div>
 
-        <div className='contact-card'>
+        <div className='contact-card' onClick={handleUpworkClick}>
           <span className='contact-icon'>
             <FontAwesomeIcon icon={faHardHat} />
           </span>
@@ -219,7 +221,7 @@ function Contact () {
             Upwork Profile
           </span>
           <span className='add-detail'>
-            <a href={PERSONAL_INFO.upworkLink} target='_blank' rel='noreferrer noopener'>Upwork</a>
+            Upwork
           </span>
         </div>
 

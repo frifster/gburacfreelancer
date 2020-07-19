@@ -42,9 +42,9 @@
 
 @mixin floating-nav {
   .floating-nav {
-    position: absolute;
+    z-index: 1200;
+    position: fixed;
     font-size: 20px;
-    width: 20px;
     left: 30px;
     top: 30px;
     background-color: $base-color;
@@ -58,6 +58,13 @@
       background-color: $bg-color;
       color: $base-color;
       box-shadow: 2px 6px 25px 1px rgba($color: $base-color, $alpha: 0.2);
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      left: 10px;
+      top: 10px;
+      font-size: 15px;
+      padding: 15px;
     }
   }
 }
@@ -114,15 +121,28 @@
   display: inline-block;
   color: $base-color;
   border: 2px solid $base-color;
-  width: 30px;
   text-align: center;
-  padding: 10px 5.5px;
-  border-radius: 20px;
+  padding: 8px 10px;
+  border-radius: 50%;
   margin-right: 10px;
   cursor: pointer;
 
   &:hover {
     background-color: $base-color;
     color: $bg-color;
+  }
+}
+
+@mixin social-media {
+  .social-media {
+    margin-bottom: 20px;
+
+    @media (max-width: $breakpoint-desktop-lg) {
+      text-align: center;
+    }
+    
+    .soc-med-icon {
+      @include mini-icon;
+    }
   }
 }

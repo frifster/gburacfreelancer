@@ -4,7 +4,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 function HomeFloatNav () {
   return (
-    <Link href='/'>
+    <Link href='/me'>
       <span className='floating-nav'><FontAwesomeIcon icon={faHome} /></span>
     </Link>
   )
