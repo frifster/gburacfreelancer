@@ -14,7 +14,7 @@ export const PERSONAL_INFO = {
   school: 'University of the Philippines - Los Baños',
   contactNumber: '+63 936 043 2765',
   address: 'Manila, Philippines',
-  userPic: '/assets/images/user_pic.jpg',
+  userPic: '/assets/images/user_pic.webp',
   aboutMe: 'I am currently building my digital career as I expand my client base in different countries at the comfort of my own home. I love that my work experience revolved around the core of every business - operations, digital and content marketing, and people management.',
   fbLink: 'https://www.facebook.com/ghia.burac',
   linkedIn: 'https://www.linkedin.com/in/ghia-b-779a7a1a4/',
@@ -162,137 +162,137 @@ export const SKILLS_LIST = [
 
 export const SKILL_CARDS = [
   {
-    image: '/assets/images/soc-med-1.png',
+    image: '/assets/images/soc-med-1.webp',
     label: 'Social media content - Ecommerce',
     key: 'contentCreation'
   },
   {
-    image: '/assets/images/soc-med-2.png',
+    image: '/assets/images/soc-med-2.webp',
     label: 'Social media content - Ecommerce 3',
     key: 'contentCreation'
   },
   {
-    image: '/assets/images/soc-med-3.png',
+    image: '/assets/images/soc-med-3.webp',
     label: 'Social media content - Ecommerce 2',
     key: 'contentCreation'
   },
   {
-    image: '/assets/images/soc-med-4.png',
+    image: '/assets/images/soc-med-4.webp',
     label: 'Infographic 2',
     key: 'contentCreation'
   },
   {
-    image: '/assets/images/soc-med-5.png',
+    image: '/assets/images/soc-med-5.webp',
     label: 'Online Ordering process',
     key: 'operations'
   },
   {
-    image: '/assets/images/soc-med-6.png',
+    image: '/assets/images/soc-med-6.webp',
     label: 'Infographic 1',
     key: 'contentCreation'
   },
   {
-    image: '/assets/images/admin-task-1.png',
+    image: '/assets/images/admin-task-1.webp',
     label: 'Booking Events',
     key: 'admin'
   },
   {
-    image: '/assets/images/admin-task-2.png',
+    image: '/assets/images/admin-task-2.webp',
     label: 'Email Marketing',
     key: 'admin'
   },
   {
-    image: '/assets/images/seo-task-1.png',
+    image: '/assets/images/seo-task-1.webp',
     label: 'Off-page optimization',
     key: 'seo'
   },
   {
-    image: '/assets/images/seo-task-2.png',
+    image: '/assets/images/seo-task-2.webp',
     label: 'SEO Website analysis and planning',
     key: 'seo'
   },
   {
-    image: '/assets/images/seo-task-3.png',
+    image: '/assets/images/seo-task-3.webp',
     label: 'Keyword research 2',
     key: 'seo'
   },
   {
-    image: '/assets/images/seo-task-4.png',
+    image: '/assets/images/seo-task-4.webp',
     label: 'Business Branding',
     key: 'seo'
   },
   {
-    image: '/assets/images/seo-task-5.png',
+    image: '/assets/images/seo-task-5.webp',
     label: 'Keyword research',
     key: 'seo'
   },
   {
-    image: '/assets/images/seo-task-6.png',
+    image: '/assets/images/seo-task-6.webp',
     label: 'Business registration and listing',
     key: 'seo'
   },
   {
-    image: '/assets/images/seo-task-7.png',
+    image: '/assets/images/seo-task-7.webp',
     label: 'Google analytics',
     key: 'seo'
   },
   {
-    image: '/assets/images/seo-task-8.png',
+    image: '/assets/images/seo-task-8.webp',
     label: 'On-page optimization',
     key: 'seo'
   },
   {
-    image: '/assets/images/seo.png',
+    image: '/assets/images/seo.webp',
     label: 'SEO writing optimization',
     key: 'seo'
   },
   {
-    image: '/assets/images/opera-1.png',
+    image: '/assets/images/opera-1.webp',
     label: 'Return Processing',
     key: 'operations'
   },
   {
-    image: '/assets/images/opera-2.png',
+    image: '/assets/images/opera-2.webp',
     label: 'Operations metrics',
     key: 'operations'
   },
   {
-    image: '/assets/images/opera-3.png',
+    image: '/assets/images/opera-3.webp',
     label: 'Product description 2',
     key: 'operations'
   },
   {
-    image: '/assets/images/opera-4.png',
+    image: '/assets/images/opera-4.webp',
     label: 'Product description 1',
     key: 'operations'
   },
   {
-    image: '/assets/images/article-5.png',
+    image: '/assets/images/article-5.webp',
     label: 'Article 5',
     key: 'articleContent'
   },
   {
-    image: '/assets/images/article-4.png',
+    image: '/assets/images/article-4.webp',
     label: 'Article 4',
     key: 'articleContent'
   },
   {
-    image: '/assets/images/article-3.png',
+    image: '/assets/images/article-3.webp',
     label: 'Article 3',
     key: 'articleContent'
   },
   {
-    image: '/assets/images/article-2.png',
+    image: '/assets/images/article-2.webp',
     label: 'Article 2',
     key: 'articleContent'
   },
   {
-    image: '/assets/images/article-1.png',
+    image: '/assets/images/article-1.webp',
     label: 'Article 5',
     key: 'articleContent'
   },
   {
-    image: '/assets/images/article-6.png',
+    image: '/assets/images/article-6.webp',
     label: 'Announcement',
     key: 'articleContent'
   }
