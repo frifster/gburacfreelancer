@@ -23,13 +23,11 @@
     display: grid;
     grid-template-columns: minmax(200px, 400px) 1fr;
 
-    
     @media (max-width: $breakpoint-desktop) {
       grid-template-columns: 1fr;
     }
 
     gap: 30px;
-
 
     .image-container {
       img {
@@ -51,21 +49,37 @@
       .user-info {
         display: grid;
         grid-template-areas:
-        "username useremail"
-        "userbirth userschool"
-        "usernation userphone"
-        "userfree useraddress";
+          "username useremail"
+          "userbirth userschool"
+          "usernation userphone"
+          "userfree useraddress";
 
         color: $para-color;
 
-        .user-name { grid-area: username; }
-        .user-birth { grid-area: userbirth; }
-        .user-email { grid-area: useremail; }
-        .user-school { grid-area: userschool; }
-        .user-phone { grid-area: userphone; }
-        .user-nation { grid-area: usernation; }
-        .user-free { grid-area: userfree; }
-        .user-address { grid-area: useraddress; }
+        .user-name {
+          grid-area: username;
+        }
+        .user-birth {
+          grid-area: userbirth;
+        }
+        .user-email {
+          grid-area: useremail;
+        }
+        .user-school {
+          grid-area: userschool;
+        }
+        .user-phone {
+          grid-area: userphone;
+        }
+        .user-nation {
+          grid-area: usernation;
+        }
+        .user-free {
+          grid-area: userfree;
+        }
+        .user-address {
+          grid-area: useraddress;
+        }
 
         .label {
           color: $dark-color;
@@ -77,14 +91,14 @@
         @media (max-width: $breakpoint-desktop-lg) {
           display: grid;
           grid-template-areas:
-          "username"
-          "userbirth"
-          "usernation"
-          "userfree"
-          "useremail"
-          "userschool"
-          "userphone"
-          "useraddress";
+            "username"
+            "userbirth"
+            "usernation"
+            "userfree"
+            "useremail"
+            "userschool"
+            "userphone"
+            "useraddress";
         }
       }
 
@@ -95,7 +109,7 @@
         @media (max-width: $breakpoint-desktop-lg) {
           grid-template-columns: 1fr;
         }
-        
+
         @media (max-width: $breakpoint-desktop) {
           grid-template-columns: 1fr;
         }
@@ -114,4 +128,3 @@
     }
   }
 }
-

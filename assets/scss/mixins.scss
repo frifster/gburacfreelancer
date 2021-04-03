@@ -2,9 +2,9 @@
   .sub-header {
     padding-bottom: 5px;
     position: relative;
-    
+
     &::before {
-      content: '';
+      content: "";
       height: 3px;
       background-color: $base-color;
       width: 60px;
@@ -17,21 +17,21 @@
 
 @mixin separator {
   .separator {
-    content: '';
+    content: "";
     border: 2px solid $base-color;
     margin: 0 auto;
     width: 150px;
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       border-radius: 50%;
       border: 7px solid $base-color;
       top: -7px;
       right: 70px;
     }
-  } 
+  }
 }
 
 @mixin emphasize {
@@ -54,7 +54,7 @@
     cursor: pointer;
     box-shadow: 2px 6px 25px 1px rgba(0, 0, 0, 0.2);
 
-    &:hover{
+    &:hover {
       background-color: $bg-color;
       color: $base-color;
       box-shadow: 2px 6px 25px 1px rgba($color: $base-color, $alpha: 0.2);
@@ -122,7 +122,7 @@
   color: $base-color;
   border: 2px solid $base-color;
   text-align: center;
-  padding: 8px 10px;
+  padding: 0.4rem 1rem;
   border-radius: 50%;
   margin-right: 10px;
   cursor: pointer;
@@ -140,7 +140,7 @@
     @media (max-width: $breakpoint-desktop-lg) {
       text-align: center;
     }
-    
+
     .soc-med-icon {
       @include mini-icon;
     }
