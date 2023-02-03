@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   lastName: 'Burac',
   country: 'PH',
   birthDate: 'April 04',
-  job: 'Content Creator | SEO Specialist | Operations Manager',
+  job: 'Operations Manager | Executive Assistant | SEO Specialist | Content Creator',
   nationality: 'Filipino',
   availability: 'Available',
   email: 'ghiburac2020@gmail.com',
@@ -15,7 +15,7 @@ export const PERSONAL_INFO = {
   contactNumber: '+63 936 043 2765',
   address: 'Manila, Philippines',
   userPic: '/assets/images/user_pic.webp',
-  aboutMe: 'I am currently building my digital career as I expand my client base in different countries at the comfort of my own home. I love that my work experience revolved around the core of every business - operations, digital and content marketing, and people management.',
+  aboutMe: 'Experienced operations manager capable of various administrative tasks supporting local and international brands. Provide quality output thru written correspondence and social media content, reports and documentation, sales and customer service, marketing outreach, vendor and supplier negotiation. Vast work history in health & wellness, pharmaceutical, entertainment, technology and communication industries.',
   fbLink: 'https://www.facebook.com/ghia.burac',
   linkedIn: 'https://www.linkedin.com/in/ghia-b-779a7a1a4/',
   twitter: 'https://twitter.com/Ghi79067455',
@@ -67,6 +67,12 @@ export const AFFILIATIONS = [
 ]
 
 export const EXPERIENCES = [
+  {
+    dateRange: '2021 - 2022',
+    label: 'EXECUTIVE ASSISTANCE & PROJECT MANAGEMENT',
+    location: 'UPWORK',
+    desc: "Supported the business growth by providing admin support to the CEO with variety of tasks and responsibilities. Increased operations productivity with creative solutions and systems improvement.Assisted with projects and marketing campaigns from planning to execution resulting to an increased in the brand's bookings and sales by 5x the usual rate."
+  },
   {
     dateRange: '2020',
     label: 'SEO SPECIALIST',
@@ -122,6 +128,18 @@ export const SKILL_PAIRS = {
 
 export const SKILLS_LIST = [
   {
+    key: 'operations',
+    icon: faUsers,
+    label: SKILL_PAIRS.operations,
+    desc: 'Create effective and efficient operational procedures for your business and team with systems development. Let’s plan better ways to provide products and services to your customers without compromising your quality and budget. '
+  },
+  {
+    key: 'admin',
+    icon: faClipboard,
+    label: SKILL_PAIRS.admin,
+    desc: 'Maximize your time and productivity by allowing me to do administrative tasks from order taking, inventory management, to reports and documentation. '
+  },
+  {
     key: 'articleContent',
     icon: faPen,
     label: SKILL_PAIRS.articleContent,
@@ -145,18 +163,6 @@ export const SKILLS_LIST = [
     icon: faComments,
     label: SKILL_PAIRS.customer,
     desc: 'Provide exemplary customer service to build a good relationship with your customers. Let’s create a lasting impression with the customers by giving relevant and helpful product or services information, resolving their issues, and handling complaints as quickly as possible.'
-  },
-  {
-    key: 'operations',
-    icon: faUsers,
-    label: SKILL_PAIRS.operations,
-    desc: 'Create effective and efficient operational procedures for your business and team with systems development. Let’s plan better ways to provide products and services to your customers without compromising your quality and budget. '
-  },
-  {
-    key: 'admin',
-    icon: faClipboard,
-    label: SKILL_PAIRS.admin,
-    desc: 'Maximize your time and productivity by allowing me to do administrative tasks from order taking, inventory management, to reports and documentation. '
   }
 ]
 

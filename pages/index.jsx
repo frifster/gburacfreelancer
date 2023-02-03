@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import { useImmer } from 'use-immer'
 import Typist from 'react-typist'
 
-function Landing () {
+function Landing() {
   const router = useRouter()
   const handleOnclickNext = () => {
     setState(draft => { draft.fadeIn = false })
@@ -22,9 +22,10 @@ function Landing () {
   })
 
   const USER_TITLE = [
+    'Operations Manager',
+    'Executive Assistant',
     'SEO Specialist',
     'Content Creator',
-    'Operations Manager'
   ]
 
   const handleOnTypingDone = () => {
